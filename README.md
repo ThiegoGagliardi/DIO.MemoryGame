@@ -17,7 +17,7 @@ Bem-vindo ao **Jogo da Memória - One Piece**! Este projeto é um jogo da memór
 ## 📷 Prévia do Jogo
 
 ![Jogo da Memória One Piece]
-<img src="https://github.com/ThiegoGagliardi/DIO.MemoryGame/jogo-da-memoria.png" alt="imagem do jogo">
+<img src="https://github.com/ThiegoGagliardi/DIO.MemoryGame/blob/main/jogo-da-memoria.png" alt="imagem do jogo">
 
 ## 🛠️ Como Executar o Projeto
 
