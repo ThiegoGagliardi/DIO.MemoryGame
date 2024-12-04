@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Paytone One';
+
+    min-height: 100vh;
+    background-image: url("../assets/main.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;    
+}
+
+h2{
+    font-size      : 3em;
+    text-transform : capitalize;
+    color : #58ACF4 ;
+    
+    font-family: 'Paytone One';
+    font-weight: 50;
+}
+
+.reset{
+    
+    padding: 15px 20px;
+    width: 100%;
+           
+    color: #F5D18C;
+    background-color:#1560BD;
+    
+    border: none;
+    
+    font-size: 1.5em;
+    text-transform: capitalize;
+
+    font-family: 'Paytone One';
+    
+    cursor: pointer;
+    font-weight:  600;
+}
+
+.reset:hover {    
+    color:  #1560BD;
+    background-color: #F5D18C;    
+}
+
+main {    
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    gap: 30px;    
+    padding: 20px;
+
+    user-select: none;
+
+    background-color: #392cc8;
+
+    box-shadow: 2px 2px 2px 2px #392cc8;
+
+    background-image: url(../assets/back_ground.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.game{
+
+   display: flex;
+   flex-wrap: wrap;
+
+   width: 430px;
+   height:430px;    
+   gap: 10px;
+   
+   perspective: 500px;
+   user-select: none;
+}
+
+.card {
+
+    position: relative;
+    display: flex;
+    
+    width: 100px;
+    height: 100px;
+
+    align-items: center;
+    justify-content: center;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;     
+        
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+        
+    transform: rotateY(0deg);
+}
+
+.card > img{
+    width : 100px;
+    height : 100px;
+    transform: rotateY(180deg);
+}
+
+.card::after {
+    
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+    background-image: url(../assets/card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+
+    backface-visibility: hidden; 
+    opacity: 0.8;
+}
+
+.card.boxOpen {
+    transform: rotateY(180deg); 
+}
+
+.card.boxMatch {
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
